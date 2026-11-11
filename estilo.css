@@ -145,6 +145,13 @@ a:hover { color: var(--cobalto-hondo); }
   border: 2px solid var(--tinta); color: var(--tinta);
 }
 .boton:hover { background: var(--tinta); color: var(--papel); }
+.boton-lleno { background: var(--tinta); color: var(--papel); }
+.boton-lleno:hover { background: var(--cobalto-hondo); border-color: var(--cobalto-hondo); color: var(--blanco); }
+
+/* Vueltito usa los colores de su propia marca: esmeralda y ámbar */
+.app-vueltito .titulo-app h2 span { color: #047857; }
+.app-vueltito li::marker { color: #d97706; }
+.app-vueltito .estado { background: #d1fae5; color: #065f46; }
 .telefono {
   border-radius: 36px; padding: 10px;
   background: var(--tinta);
@@ -181,6 +188,7 @@ a:hover { color: var(--cobalto-hondo); }
   padding-top: 32px; padding-bottom: 40px;
   color: var(--gris); font-size: 0.95rem;
 }
+.enlaces-pie { display: flex; flex-wrap: wrap; gap: 8px 20px; }
 
 @media (max-width: 760px) {
   .app { grid-template-columns: 1fr; }
