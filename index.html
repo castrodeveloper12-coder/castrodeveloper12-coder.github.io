@@ -3,130 +3,234 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CastroDeveloper: apps para Latinoamérica</title>
-<meta name="description" content="CastroDeveloper hace apps móviles para la vida diaria en Latinoamérica. Conoce Vueltito, ventas e inventario para tu tienda, y MotoCare, el mantenimiento de tu moto.">
+<title>CastroDeveloper: apps, web y software a la medida</title>
+<meta name="description" content="CastroDeveloper desarrolla apps móviles, páginas y sistemas web, backend en la nube y automatizaciones con IA para negocios de Latinoamérica. Creador de Vueltito y MotoCare.">
+<link rel="canonical" href="https://castrodeveloper.dev/">
+<meta name="theme-color" content="#0d1015">
+<meta property="og:type" content="website">
 <meta property="og:title" content="CastroDeveloper">
-<meta property="og:description" content="Apps móviles para la vida diaria en Latinoamérica.">
-<meta property="og:image" content="img/motocare-icono.png">
-<link rel="icon" href="img/motocare-icono.png">
+<meta property="og:description" content="Apps móviles, web, backend y automatización con IA, desde Colombia para Latinoamérica.">
+<meta property="og:url" content="https://castrodeveloper.dev/">
+<meta property="og:image" content="https://castrodeveloper.dev/motocare/img/compartir.jpg">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-<header class="contenedor cabecera">
-  <a class="marca" href="./">Castro<span>Developer</span></a>
-  <nav class="menu" aria-label="Secciones">
-    <a href="#apps">Apps</a>
-    <a href="#trabajo">Cómo trabajo</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
+<header class="cabecera" id="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="./" aria-label="CastroDeveloper, inicio">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="15" fill="#2546C8"/><path d="M36 20.5a13 13 0 1 0 0 23" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/><circle cx="44.5" cy="32" r="4.5" fill="#fff"/></svg>
+      CastroDeveloper
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#proceso">Proceso</a>
+      <a class="boton boton-lleno boton-chico" href="#contacto">Hablemos</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <section class="contenedor portada" id="apps" aria-labelledby="titulo">
-    <h1 id="titulo">Apps para la vida diaria en Latinoamérica</h1>
-    <p class="entrada">Diseño y desarrollo aplicaciones móviles útiles, claras y respetuosas con tus datos, pensadas para cómo se vive en la región: en español y portugués, con la moneda y los trámites de cada país.</p>
-
-    <ul class="pantalla" aria-label="Aplicaciones">
-      <li>
-        <a href="https://vueltito.app/">
-          <img src="img/vueltito-icono.png" width="132" height="132" alt="">
-          Vueltito
-        </a>
-      </li>
-      <li>
-        <a href="motocare/">
-          <img src="img/motocare-icono.png" width="132" height="132" alt="">
-          MotoCare
-        </a>
-      </li>
-      <li aria-hidden="true"><span class="vacio"><span class="hueco"></span>Próxima app</span></li>
-      <li aria-hidden="true"><span class="vacio"><span class="hueco"></span>Próxima app</span></li>
-    </ul>
-  </section>
-
-  <section class="seccion" id="vueltito" aria-labelledby="titulo-vueltito">
-    <div class="contenedor app app-vueltito">
-      <div>
-        <div class="titulo-app">
-          <img src="img/vueltito-icono.png" width="64" height="64" alt="">
-          <h2 id="titulo-vueltito">Vuel<span>tito</span></h2>
-        </div>
-        <span class="estado">Disponible gratis en Google Play</span>
-        <p>Ventas, inventario, fiados y caja para tiendas de barrio y pequeños negocios. Funciona sin internet y se usa desde el primer día, sin capacitación.</p>
-        <ul>
-          <li>Vende en pocos toques: toca la foto del producto o lee el código de barras, y Vueltito calcula el total y las vueltas.</li>
-          <li>Sabe qué te queda en la tienda y qué se está acabando antes de que te lo pidan.</li>
-          <li>Anota los fiados y los abonos de cada cliente, y mándale el recordatorio por WhatsApp.</li>
-          <li>Abre y cierra la caja cada día, con ventas, gastos y ganancia a la vista.</li>
-          <li>Envía el comprobante por WhatsApp o correo, sin imprimir papel.</li>
-          <li>Elige tu país y tu moneda: funciona en toda Latinoamérica.</li>
-        </ul>
-        <div class="acciones">
-          <a class="boton boton-lleno" href="https://play.google.com/store/apps/details?id=com.castrodeveloper.vento">Descargar en Google Play</a>
-          <a class="boton" href="https://vueltito.app/">Conocer Vueltito</a>
-          <a class="boton" href="https://vueltito.app/privacy-policy.html">Política de privacidad</a>
-        </div>
+  <section class="portada" aria-labelledby="titulo">
+    <div class="contenedor rejilla">
+     <div>
+      <span class="disponible"><i aria-hidden="true"></i>Disponible para nuevos proyectos</span>
+      <h1 id="titulo"><span class="palabra" style="--i:0">Construyo</span> <span class="palabra" style="--i:1">el</span> <span class="palabra" style="--i:2">software</span> <span class="palabra" style="--i:3">que</span> <span class="palabra" style="--i:4">tu</span> <span class="palabra" style="--i:5">negocio</span> <span class="palabra" style="--i:6">necesita</span></h1>
+      <p class="entrada" data-revelar style="--i:4">Apps móviles, páginas y sistemas web, backend en la nube y automatizaciones con IA. Desde Colombia para toda Latinoamérica, de la idea hasta que está funcionando.</p>
+      <div class="acciones" data-revelar style="--i:5">
+        <a class="boton boton-lleno" href="#contacto">Cuéntame tu proyecto</a>
+        <a class="boton" href="#proyectos">Ver proyectos</a>
       </div>
-      <div class="telefono">
-        <img src="img/vueltito-venta.webp" width="640" height="1419" alt="Pantalla de nueva venta en Vueltito con productos de una tienda, sus precios y el botón para cobrar." loading="lazy">
+      <div class="prueba-social" data-revelar style="--i:6">
+        <span>Apps propias, diseñadas y programadas aquí:</span>
+        <ul>
+          <li><a href="https://vueltito.app/"><img src="img/vueltito-icono.png" width="36" height="36" alt="">Vueltito</a></li>
+          <li><a href="motocare/"><img src="img/motocare-icono.png" width="36" height="36" alt="">MotoCare</a></li>
+        </ul>
+      </div>
+     </div>
+      <div class="codigo" data-revelar style="--i:3" aria-hidden="true">
+        <div class="barra"><i></i><i></i><i></i><span>tu_proyecto.dart</span></div>
+<pre><span class="k">final</span> proyecto = <span class="t">Proyecto</span>(
+  cliente: <span class="s">'Tu negocio'</span>,
+  plataformas: [<span class="t">Android</span>, <span class="t">iOS</span>, <span class="t">Web</span>],
+  datos: <span class="t">Cifrados</span>(),
+  idiomas: [<span class="s">'es'</span>, <span class="s">'pt'</span>],
+);
+
+<span class="k">await</span> proyecto.<span class="f">disenar</span>();
+<span class="k">await</span> proyecto.<span class="f">construir</span>(pruebas: <span class="k">true</span>);
+<span class="k">await</span> proyecto.<span class="f">publicar</span>();
+<span class="c">// Listo y funcionando</span> <span class="cursor"></span></pre>
       </div>
     </div>
   </section>
 
-  <section class="seccion" id="motocare" aria-labelledby="titulo-motocare">
-    <div class="contenedor app">
-      <div>
-        <div class="titulo-app">
-          <img src="img/motocare-icono.png" width="64" height="64" alt="">
-          <h2 id="titulo-motocare">Moto<span>Care</span></h2>
-        </div>
-        <span class="estado">En pruebas, pronto en Google Play</span>
-        <p>Lleva el mantenimiento, los gastos y los documentos de tu moto sin crear una cuenta. Todo se guarda cifrado en tu teléfono.</p>
-        <ul>
-          <li>Sabe cuándo toca el cambio de aceite, el kit de arrastre o las pastillas, con los intervalos de tu manual o tu taller.</li>
-          <li>Recibe un aviso antes de que venza el SOAT, la revisión técnica o la licencia, con los nombres de los documentos de tu país.</li>
-          <li>Registra tanqueos y gastos en tu moneda, y mira el rendimiento por galón o por litro.</li>
-          <li>Guarda fotos de documentos y facturas, cifradas y sin datos de ubicación.</li>
-        </ul>
-        <div class="acciones">
-          <a class="boton boton-lleno" href="motocare/">Conocer MotoCare</a>
-          <a class="boton" href="motocare-legal/privacidad.html">Política de privacidad</a>
-        </div>
-      </div>
-      <div class="telefono">
-        <img src="img/motocare-inicio.webp" width="540" height="1200" alt="Pantalla de inicio de MotoCare con el kilometraje de una Yamaha FZ 2.0 y los mantenimientos que vienen." loading="lazy">
-      </div>
-    </div>
-  </section>
-
-  <section class="seccion" id="trabajo" aria-labelledby="titulo-trabajo">
+  <section class="seccion" id="servicios" aria-labelledby="titulo-servicios">
     <div class="contenedor">
-      <h2 id="titulo-trabajo">Cómo hago las apps</h2>
+      <div class="encabezado" data-revelar>
+        <h2 id="titulo-servicios">Lo que puedo construir para ti</h2>
+        <p>Un solo desarrollador de principio a fin: entiendo tu negocio, diseño, programo, publico y sigo contigo después del lanzamiento.</p>
+      </div>
+
+      <div class="bento">
+        <article class="tarjeta t-apps" data-revelar style="--i:0">
+          <h3>Apps móviles</h3>
+          <p>Apps para Android y iPhone con Flutter: rápidas, que funcionan sin internet y listas para publicar en las tiendas, con pagos, suscripciones, anuncios y notificaciones.</p>
+          <ul class="etiquetas"><li>Flutter</li><li>Android</li><li>iPhone</li><li>Google Play</li></ul>
+          <div class="telefonos" aria-hidden="true">
+            <div class="tel tel-1"><img src="img/vueltito-venta.webp" width="640" height="1419" alt="" loading="lazy"></div>
+            <div class="tel tel-2"><img src="img/motocare-inicio.webp" width="540" height="1200" alt="" loading="lazy"></div>
+          </div>
+        </article>
+
+        <article class="tarjeta t-web" data-revelar style="--i:1">
+          <h3>Páginas y sistemas web</h3>
+          <p>Sitios rápidos, tiendas y sistemas internos a la medida, que se ven bien en cualquier pantalla.</p>
+          <div class="ilustracion" aria-hidden="true">
+            <div class="navegador">
+              <div class="barra"><i></i><i></i><i></i><span>tunegocio.com</span></div>
+              <div class="cuerpo">
+                <div class="linea larga"></div>
+                <div class="linea media"></div>
+                <div class="bloques"><i></i><i></i><i></i></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="tarjeta t-backend" data-revelar style="--i:2">
+          <h3>Backend y nube</h3>
+          <p>APIs, bases de datos y servidores en Firebase o Cloudflare, seguros, con copias de respaldo y listos para crecer.</p>
+          <div class="ilustracion" aria-hidden="true">
+            <ul class="registro">
+              <li><b>POST</b><span>/ventas</span><em>201</em></li>
+              <li><b>GET</b><span>/inventario</span><em>200</em></li>
+              <li><b>PUT</b><span>/clientes/42</span><em>200</em></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tarjeta t-ia" data-revelar style="--i:3">
+          <div>
+            <h3>Automatización e IA</h3>
+            <p>Conecto tus herramientas, automatizo las tareas repetitivas y sumo inteligencia artificial donde de verdad ahorra tiempo: reportes, atención a clientes, documentos y datos.</p>
+            <ul class="etiquetas"><li>Integraciones</li><li>Asistentes</li><li>Reportes automáticos</li></ul>
+          </div>
+          <div class="ilustracion" aria-hidden="true">
+            <div class="chat">
+              <p class="yo">¿Cuánto vendimos esta semana y qué se está acabando?</p>
+              <p class="bot">Vendiste un 12% más que la semana pasada. El arroz de 1 kg se acaba en unos 3 días; ya dejé lista la orden para tu proveedor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="proyectos" aria-labelledby="titulo-proyectos">
+    <div class="contenedor">
+      <div class="encabezado" data-revelar>
+        <h2 id="titulo-proyectos">Proyectos propios</h2>
+        <p>Además de trabajar para clientes, diseño, programo y mantengo mis propias apps. Son la mejor muestra de cómo trabajo.</p>
+      </div>
+
+      <div class="proyectos">
+        <a class="proyecto proyecto-vueltito" href="https://vueltito.app/" data-revelar style="--i:0">
+          <div class="info">
+            <div class="cabeza">
+              <div class="nombre"><img src="img/vueltito-icono.png" width="52" height="52" alt=""><h3>Vueltito</h3></div>
+              <span class="estado"><i aria-hidden="true"></i>En Google Play</span>
+            </div>
+            <p>Ventas, inventario, fiados y caja para tiendas de barrio y pequeños negocios. Funciona sin internet y se usa desde el primer día.</p>
+            <ul class="etiquetas"><li>Flutter</li><li>SQLite</li><li>Firebase</li></ul>
+            <span class="ir">Conocer Vueltito</span>
+          </div>
+          <div class="pantalla"><img src="img/vueltito-venta.webp" width="640" height="1419" alt="Pantalla de nueva venta en Vueltito con productos, precios y el botón para cobrar." loading="lazy"></div>
+        </a>
+
+        <a class="proyecto proyecto-motocare" href="motocare/" data-revelar style="--i:1">
+          <div class="info">
+            <div class="cabeza">
+              <div class="nombre"><img src="img/motocare-icono.png" width="52" height="52" alt=""><h3>MotoCare</h3></div>
+              <span class="estado"><i aria-hidden="true"></i>En prueba cerrada</span>
+            </div>
+            <p>Mantenimiento, gastos y documentos de la moto, sin cuenta y cifrado en el teléfono. Para 18 países, en español y portugués.</p>
+            <ul class="etiquetas"><li>Flutter</li><li>SQLite cifrado</li><li>AdMob</li></ul>
+            <span class="ir">Conocer MotoCare</span>
+          </div>
+          <div class="pantalla"><img src="img/motocare-inicio.webp" width="540" height="1200" alt="Pantalla de inicio de MotoCare con el kilometraje y los mantenimientos que vienen." loading="lazy"></div>
+        </a>
+      </div>
+
+      <div class="proxima" data-revelar>
+        <div>
+          <h3>Tu proyecto puede ser el siguiente</h3>
+          <p>¿Tienes un negocio o una idea que necesita software? Cuéntame qué problema quieres resolver.</p>
+        </div>
+        <a class="boton" href="#contacto">Proponer un proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="proceso" aria-labelledby="titulo-proceso">
+    <div class="contenedor">
+      <div class="encabezado" data-revelar>
+        <h2 id="titulo-proceso">Cómo trabajamos juntos</h2>
+        <p>Cuatro etapas claras, con avances que puedes ver y probar en cada una.</p>
+      </div>
+      <ol class="proceso">
+        <li data-revelar style="--i:0">
+          <h3>Entender</h3>
+          <p>Hablamos de tu negocio, de quién va a usar el software y de qué tiene que resolver. Definimos juntos el alcance.</p>
+        </li>
+        <li data-revelar style="--i:1">
+          <h3>Diseñar</h3>
+          <p>Pantallas y flujos antes de programar, para ajustar la idea cuando cambiarla todavía es barato.</p>
+        </li>
+        <li data-revelar style="--i:2">
+          <h3>Construir y probar</h3>
+          <p>Entregas por partes, con pruebas automáticas y versiones que pruebas con personas reales.</p>
+        </li>
+        <li data-revelar style="--i:3">
+          <h3>Lanzar y acompañar</h3>
+          <p>Publicación en las tiendas o en la web, políticas de privacidad, actualizaciones y soporte.</p>
+        </li>
+      </ol>
+
       <div class="principios">
-        <div>
-          <h3>Sin cuentas que no hacen falta</h3>
-          <p>Si una app puede funcionar sin registrarte, no te pide correo ni contraseña.</p>
+        <div data-revelar>
+          <h3>Lo que no negocio</h3>
+          <p class="nota">Las mismas reglas con las que hago mis apps las aplico a tu proyecto.</p>
+          <ul class="herramientas" aria-label="Herramientas">
+            <li>Flutter</li><li>Dart</li><li>Firebase</li><li>SQLite</li><li>Cloudflare</li><li>Google Play</li><li>AdMob</li><li>HTML y CSS</li><li>GitHub</li>
+          </ul>
         </div>
-        <div>
-          <h3>Tus datos en tu teléfono</h3>
-          <p>Lo que guardas vive en tu dispositivo y las copias de seguridad van cifradas. Puedes exportarlo o borrarlo cuando quieras.</p>
-        </div>
-        <div>
-          <h3>Hechas para la región</h3>
-          <p>Español y portugués, la moneda de cada país y los documentos con el nombre que tienen allá.</p>
-        </div>
+        <ul class="lista">
+          <li data-revelar style="--i:0"><strong>Datos protegidos</strong>Cifrado, copias de respaldo y respeto por las leyes de protección de datos de la región.</li>
+          <li data-revelar style="--i:1"><strong>Software que se usa sin manual</strong>Textos claros, botones grandes y pantallas pensadas para quien tiene prisa.</li>
+          <li data-revelar style="--i:2"><strong>Hecho para Latinoamérica</strong>Español y portugués, la moneda de cada país y los trámites con el nombre que tienen allá.</li>
+          <li data-revelar style="--i:3"><strong>Código ordenado</strong>Con pruebas automáticas y documentación, para que el proyecto pueda crecer sin empezar de cero.</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section class="seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
     <div class="contenedor">
-      <h2 id="titulo-contacto">Escríbeme</h2>
-      <p>Soporte de las apps, solicitudes de privacidad o propuestas de trabajo. Respondo en un máximo de 10 días.</p>
-      <a class="correo" href="mailto:castrodeveloper12@gmail.com">castrodeveloper12@gmail.com</a>
+      <div class="tarjeta-contacto" data-revelar>
+        <div>
+          <h2 id="titulo-contacto">¿Tienes un proyecto en mente?</h2>
+          <p>Cuéntame qué necesitas y te respondo con una propuesta. También atiendo el soporte de mis apps y las solicitudes de privacidad.</p>
+          <a class="correo" href="mailto:castrodeveloper12@gmail.com">castrodeveloper12@gmail.com</a>
+        </div>
+        <a class="boton boton-lleno" href="mailto:castrodeveloper12@gmail.com?subject=Nuevo%20proyecto">Escribir un correo</a>
+      </div>
     </div>
   </section>
 </main>
@@ -134,9 +238,36 @@
 <footer class="contenedor pie">
   <span>© 2026 CastroDeveloper, Colombia</span>
   <span class="enlaces-pie">
+    <a href="https://vueltito.app/">Vueltito</a>
+    <a href="motocare/">MotoCare</a>
     <a href="https://vueltito.app/privacy-policy.html">Privacidad de Vueltito</a>
     <a href="motocare-legal/privacidad.html">Privacidad de MotoCare</a>
   </span>
 </footer>
+
+<script>
+(function () {
+  var cab = document.getElementById('cabecera');
+  function borde() { cab.classList.toggle('con-borde', window.scrollY > 8); }
+  window.addEventListener('scroll', borde, { passive: true });
+  borde();
+
+  requestAnimationFrame(function () {
+    document.querySelector('.portada').classList.add('lista-portada');
+  });
+
+  var items = document.querySelectorAll('[data-revelar]');
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(function (el) { el.classList.add('visible'); });
+    return;
+  }
+  var obs = new IntersectionObserver(function (entradas) {
+    entradas.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  items.forEach(function (el) { obs.observe(el); });
+})();
+</script>
 </body>
 </html>
