@@ -3,20 +3,103 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CastroDeveloper</title>
-<style>
-body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:#fff;color:#14171c}
-@media (prefers-color-scheme:dark){body{background:#101318;color:#eef0f3}a{color:#ff7838}}
-main{max-width:640px;margin:0 auto;padding:40px 16px}a{color:#c2410c}
-</style>
+<title>CastroDeveloper: apps para Latinoamérica</title>
+<meta name="description" content="CastroDeveloper hace apps móviles para la vida diaria en Latinoamérica. Conoce MotoCare: mantenimiento, gastos y documentos de tu moto.">
+<meta property="og:title" content="CastroDeveloper">
+<meta property="og:description" content="Apps móviles para la vida diaria en Latinoamérica.">
+<meta property="og:image" content="img/motocare-icono.png">
+<link rel="icon" href="img/motocare-icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Literata:opsz,wght@7..72,400;7..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+<header class="contenedor cabecera">
+  <a class="marca" href="./">Castro<span>Developer</span></a>
+  <nav class="menu" aria-label="Secciones">
+    <a href="#apps">Apps</a>
+    <a href="#trabajo">Cómo trabajo</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
 <main>
-<h1>CastroDeveloper</h1>
-<p>Apps para Android.</p>
-<ul>
-  <li><a href="motocare-legal/">MotoCare</a>: mantenimiento, gastos y documentos de tu moto.</li>
-</ul>
+  <section class="contenedor portada" id="apps" aria-labelledby="titulo">
+    <h1 id="titulo">Apps para la vida diaria en Latinoamérica</h1>
+    <p class="entrada">Diseño y desarrollo aplicaciones móviles útiles, claras y respetuosas con tus datos, pensadas para cómo se vive en la región: en español y portugués, con la moneda y los trámites de cada país.</p>
+
+    <ul class="pantalla" aria-label="Aplicaciones">
+      <li>
+        <a href="#motocare">
+          <img src="img/motocare-icono.png" width="132" height="132" alt="">
+          MotoCare
+        </a>
+      </li>
+      <li aria-hidden="true"><span class="vacio"><span class="hueco"></span>Próxima app</span></li>
+      <li aria-hidden="true"><span class="vacio"><span class="hueco"></span>Próxima app</span></li>
+      <li aria-hidden="true"><span class="vacio"><span class="hueco"></span>Próxima app</span></li>
+    </ul>
+  </section>
+
+  <section class="seccion" id="motocare" aria-labelledby="titulo-motocare">
+    <div class="contenedor app">
+      <div>
+        <div class="titulo-app">
+          <img src="img/motocare-icono.png" width="64" height="64" alt="">
+          <h2 id="titulo-motocare">Moto<span>Care</span></h2>
+        </div>
+        <span class="estado">En pruebas, pronto en Google Play</span>
+        <p>Lleva el mantenimiento, los gastos y los documentos de tu moto sin crear una cuenta. Todo se guarda cifrado en tu teléfono.</p>
+        <ul>
+          <li>Sabe cuándo toca el cambio de aceite, el kit de arrastre o las pastillas, con los intervalos de tu manual o tu taller.</li>
+          <li>Recibe un aviso antes de que venza el SOAT, la revisión técnica o la licencia, con los nombres de los documentos de tu país.</li>
+          <li>Registra tanqueos y gastos en tu moneda, y mira el rendimiento por galón o por litro.</li>
+          <li>Guarda fotos de documentos y facturas, cifradas y sin datos de ubicación.</li>
+        </ul>
+        <div class="acciones">
+          <a class="boton" href="motocare-legal/privacidad.html">Política de privacidad</a>
+          <a class="boton" href="motocare-legal/#borrar-datos">Cómo borrar tus datos</a>
+        </div>
+      </div>
+      <div class="telefono">
+        <img src="img/motocare-inicio.webp" width="540" height="1200" alt="Pantalla de inicio de MotoCare con el kilometraje de una Yamaha FZ 2.0 y los mantenimientos que vienen." loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion" id="trabajo" aria-labelledby="titulo-trabajo">
+    <div class="contenedor">
+      <h2 id="titulo-trabajo">Cómo hago las apps</h2>
+      <div class="principios">
+        <div>
+          <h3>Sin cuentas que no hacen falta</h3>
+          <p>Si una app puede funcionar sin registrarte, no te pide correo ni contraseña.</p>
+        </div>
+        <div>
+          <h3>Tus datos en tu teléfono</h3>
+          <p>Lo que guardas se queda en tu dispositivo y se cifra. Puedes exportarlo o borrarlo cuando quieras.</p>
+        </div>
+        <div>
+          <h3>Hechas para la región</h3>
+          <p>Español y portugués, la moneda de cada país y los documentos con el nombre que tienen allá.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
+    <div class="contenedor">
+      <h2 id="titulo-contacto">Escríbeme</h2>
+      <p>Soporte de las apps, solicitudes de privacidad o propuestas de trabajo. Respondo en un máximo de 10 días.</p>
+      <a class="correo" href="mailto:castrodeveloper12@gmail.com">castrodeveloper12@gmail.com</a>
+    </div>
+  </section>
 </main>
+
+<footer class="contenedor pie">
+  <span>© 2026 CastroDeveloper, Colombia</span>
+  <a href="motocare-legal/privacidad.html">Privacidad de MotoCare</a>
+</footer>
 </body>
 </html>
